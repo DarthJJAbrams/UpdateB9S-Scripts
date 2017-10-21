@@ -1,0 +1,16 @@
+#Script by /u/IAmATitanX-AMA
+#Set godmode9 as boot.firm, for those who are using microSD management to update b9s
+
+set ERRORMSG "Operation aborted"
+set SUCCESSMSG "Successfully copied godmode9"
+
+ask "Make godmode9 boot.firm?\nBe sure the files are set correctly."
+
+set ERRORMSG "Failed to copy godmode9\nBe sure godmode9.firm is in /luma/payloads/"
+cp 0:/boot.firm 0:/luma71.firm #Creates Luma Backup
+cp -w 0:/luma/payloads/godmode9.firm 0:/boot.firm
+
+echo "Godmode9 copied\nPress A to launch SafeB9SInstaller"
+
+set ERRORMSG "Failed to launch SafeB9SInstaller.firm\nBe sure it is in /luma/payloads.\nYou may need to rename luma71.firm to boot.firm\nif booting is required."
+boot 0:/luma/payloads/SafeB9SInstaller.firm

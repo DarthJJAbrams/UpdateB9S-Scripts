@@ -1,0 +1,17 @@
+#Script by /u/IAmATitanX-AMA
+#Copies luma 8.1.1 to root. Created for microSD management-based b9s updates.
+
+set ERRORMSG "Operation aborted"
+set SUCCESSMSG "Copied luma successfully"
+
+ask "Copy the newest version of luma to root?"
+
+set ERRORMSG "Failed to copy luma\nBe sure newluma.firm is on root."
+mv -w 0:/newluma.firm 0:/boot.firm
+
+set ERRORMSG "Copied Luma successfully"
+ask "Luma setup complete\nCleanup files from this guide's scripts?"
+rm -o -s 0:/luma71.firm
+rm -o -s 0:/gm9/scripts/gm9boot.gm9
+rm -o -s 0:/gm9/scripts/updateluma.gm9
+rm -o -s 0:/gm9/scripts/RevertLuma.gm9

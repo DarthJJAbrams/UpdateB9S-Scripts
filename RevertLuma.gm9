@@ -1,0 +1,10 @@
+#Script by /u/IAmATitanX-AMA
+#Reverts luma backup
+
+set SUCCESSMSG "Luma reverted"
+set ERRORMSG "Operation aborted"
+
+ask "Revert backup of luma 7.1?"
+
+set ERRORMSG "Failed to copy luma"
+cp -w 0:/luma71.firm 0:/boot.firm
