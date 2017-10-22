@@ -7,4 +7,4 @@ set ERRORMSG "Operation aborted"
 ask "Revert backup of luma 7.1?"
 
 set ERRORMSG "Failed to copy luma"
-cp -w 0:/luma71.firm 0:/boot.firm
+cp -w 0:/backupboot.firm 0:/boot.firm

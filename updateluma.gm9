@@ -11,7 +11,7 @@ cp -w 0:/newluma.firm 0:/boot.firm
 
 set ERRORMSG "Copied Luma successfully"
 ask "Luma setup complete\nCleanup files from this guide's scripts?"
-rm -o -s 0:/luma71.firm
+rm -o -s 0:/backupboot.firm
 rm -o -s 0:/gm9/scripts/gm9boot.gm9
 rm -o -s 0:/gm9/scripts/updateluma.gm9
 rm -o -s 0:/gm9/scripts/RevertLuma.gm9
