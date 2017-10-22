@@ -7,7 +7,7 @@ set SUCCESSMSG "Successfully copied godmode9"
 ask "Make godmode9 boot.firm?\nBe sure the files are set correctly."
 
 set ERRORMSG "Failed to copy godmode9\nBe sure godmode9.firm is in /luma/payloads/"
-cp 0:/boot.firm 0:/luma71.firm #Creates Luma Backup
+cp 0:/boot.firm 0:/backupboot.firm #Creates Luma Backup
 cp -w 0:/luma/payloads/godmode9.firm 0:/boot.firm
 
 echo "Godmode9 copied\nPress A to launch SafeB9SInstaller"
