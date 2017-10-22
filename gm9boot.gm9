@@ -10,7 +10,7 @@ set ERRORMSG "Failed to copy godmode9\nBe sure godmode9.firm is in /luma/payload
 cp 0:/boot.firm 0:/backupboot.firm #Creates Luma Backup
 cp -w 0:/luma/payloads/godmode9.firm 0:/boot.firm
 
-echo "Godmode9 copied\nPress A to launch SafeB9SInstaller"
+echo "Console now boots into godmode9\nLuma 7.1 backup is named backupboot.firm\nPress A to launch SafeB9SInstaller"
 
 set ERRORMSG "Failed to launch SafeB9SInstaller.firm\nBe sure it is in /luma/payloads.\nYou may need to run the RevertLuma script\nif booting is required."
 boot 0:/luma/payloads/SafeB9SInstaller.firm
